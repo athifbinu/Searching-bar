@@ -25,7 +25,7 @@ fetch("https://jsonplaceholder.typicode.com/users")   //api fetcing
       header.textContent = user.name
       body.textContent = user.email
       userCardContainer.append(card)
-      return { name: user.name, email: user.email, element: card }
+      return { name: user.name, email: user.email, element: card}
     })
   })
 
