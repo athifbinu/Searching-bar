@@ -1,21 +1,3 @@
-// const userTemplate=document.querySelector("[data-user-template]")
-// const userCardcontsiner=document.querySelector('[data-user-cards-container]')
-
-
-// fetch("https://jsonplaceholder.typicode.com/users")
-// .then(res => res.json())
-// .then(data => {
-//     data.forEach(user => {
-//         const card=userCardTemplate.content.cloneNode(true).children[0]
-//         const header=card.querySelector("[data-header]")
-//         const body=card.querySelector("[data-body]")
-//         header.textContent=user.name
-//         body.textContent=user.email
-//         userCardContainer.append(card)
-//     })
-// })
-
-
 
 const userCardTemplate = document.querySelector("[data-user-template]")
 const userCardContainer = document.querySelector("[data-user-cards-container]")
@@ -33,7 +15,7 @@ searchInput.addEventListener("input", e => {
   })
 })
 
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("https://jsonplaceholder.typicode.com/users")   //api fetcing
   .then(res => res.json())
   .then(data => {
     users = data.map(user => {
@@ -55,18 +37,4 @@ fetch("https://jsonplaceholder.typicode.com/users")
 
 
 
-
-
-// const serchInput=document.querySelector("[data-search]")
-
-// serchInput.addEventListener("input", e => {
-//   const value = e.target.value.toLowerCase()
-//   user.forEach(user => {
-//     const isVisible = 
-//     user.name.toLowerCase().includes(value) ||
-//     user.email.toLowerCase().includes(value)
-//     user.Element.classList.toggle("hide",!isVisible)
-
-//   })
-// })
 
