@@ -1,4 +1,3 @@
 # Searching-bar
-To Learn From Udemy
-#To check The link 
+    Project Link
 https://athifbinu.github.io/Searching-bar/
